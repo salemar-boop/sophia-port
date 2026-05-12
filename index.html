@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Sophia — design portfolio" />
-    <title>Sophia — Portfolio</title>
+    <meta name="description" content="Design portfolio" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,8 +24,8 @@
             <path fill="currentColor" d="M0 0h18v1.5H0V0zm0 5.25h18v1.5H0v-1.5zm0 5.25h18V12H0v-1.5z" />
           </svg>
         </button>
-        <a class="site-logo" href="#">Sophia</a>
-        <a class="icon-btn" href="#contact" aria-label="Contact">
+        <a class="site-logo" href="#" id="site-logo">Portfolio</a>
+        <a class="icon-btn" href="#contact" aria-label="Contact" id="contact-bag">
           <svg width="18" height="20" viewBox="0 0 18 20" aria-hidden="true">
             <path
               fill="none"
@@ -64,199 +64,23 @@
     <main>
       <section class="intro" id="about" aria-labelledby="about-heading">
         <h1 id="about-heading" class="visually-hidden">About</h1>
-        <p class="intro__text">
-          Selected work — circular previews on a strict grid: thin black rules, light
-          field, uppercase captions. Tap any tile to open the full image.
-        </p>
+        <div class="bio" id="bio-root"></div>
       </section>
 
       <section class="work" id="work" aria-label="Selected work">
-        <div class="portfolio">
-          <div class="grid-row grid-row--2">
-            <article class="cell">
-              <a class="cell__link" href="port/1765297829.197648.jpg" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/1765297829.197648.jpg"
-                    alt="Hand-painted clock with key-shaped hands on a gallery wall"
-                    width="440"
-                    height="440"
-                    loading="eager"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Unlock your potential</h2>
-                  <p class="cell__sub">Mixed media · Clock</p>
-                </div>
-              </a>
-            </article>
-            <article class="cell">
-              <a class="cell__link" href="port/1765297831.848271.jpg" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/1765297831.848271.jpg"
-                    alt="Project photograph"
-                    width="440"
-                    height="440"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Study 7831</h2>
-                  <p class="cell__sub">Photography</p>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          <div class="grid-row grid-row--4">
-            <article class="cell">
-              <a class="cell__link" href="port/1765297833.7515922.jpg" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/1765297833.7515922.jpg"
-                    alt="Project photograph"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Study 7833</h2>
-                  <p class="cell__sub">Photography</p>
-                </div>
-              </a>
-            </article>
-            <article class="cell">
-              <a class="cell__link" href="port/1765297838.013812.jpg" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/1765297838.013812.jpg"
-                    alt="Project photograph"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Study 7838</h2>
-                  <p class="cell__sub">Photography</p>
-                </div>
-              </a>
-            </article>
-            <article class="cell">
-              <a class="cell__link" href="port/icons.jpg" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/icons.jpg"
-                    alt="Icon grid design"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Icons</h2>
-                  <p class="cell__sub">Digital</p>
-                </div>
-              </a>
-            </article>
-            <article class="cell">
-              <a class="cell__link" href="port/final%20final%202.png" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/final%20final%202.png"
-                    alt="Final design piece two"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Final II</h2>
-                  <p class="cell__sub">Print</p>
-                </div>
-              </a>
-            </article>
-          </div>
-
-          <div class="grid-row grid-row--4">
-            <article class="cell cell--span2">
-              <a class="cell__link" href="port/final%20final%203.png" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/final%20final%203.png"
-                    alt="Final design piece three"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Final III</h2>
-                  <p class="cell__sub">Print</p>
-                </div>
-              </a>
-            </article>
-            <article class="cell cell--span2">
-              <a class="cell__link" href="port/final%20final%20pp1.png" target="_blank" rel="noopener noreferrer">
-                <div class="cell__visual">
-                  <img
-                    src="port/final%20final%20pp1.png"
-                    alt="Final presentation page one"
-                    width="320"
-                    height="320"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <hr class="cell__rule" />
-                <div class="cell__meta">
-                  <h2 class="cell__title">Final PP1</h2>
-                  <p class="cell__sub">Layout</p>
-                </div>
-              </a>
-            </article>
-          </div>
-        </div>
+        <div class="portfolio" id="portfolio-root"></div>
       </section>
 
-      <section class="files" id="contact" aria-labelledby="files-heading">
-        <h2 id="files-heading" class="files__heading">More files</h2>
-        <p class="files__note">
-          PDFs and video in <code>port/</code> are linked here for download or view.
-        </p>
-        <ul class="files__list">
-          <li><a href="port/cookbook%20turn%20in.pdf">Cookbook turn in.pdf</a></li>
-          <li><a href="port/9%20patterns.pdf">9 patterns.pdf</a></li>
-          <li><a href="port/Word%20Final%202-1.pdf">Word Final 2-1.pdf</a></li>
-          <li><a href="port/final%20final.pdf">Final final.pdf</a></li>
-          <li><a href="port/final-1.pdf">Final-1.pdf</a></li>
-          <li><a href="port/final%201-1.pdf">Final 1-1.pdf</a></li>
-          <li><a href="port/finall.pdf">Finall.pdf</a></li>
-          <li><a href="port/20260223-2206-07.5363944%20(1).mp4">Process video (.mp4)</a></li>
-        </ul>
+      <section class="files" id="files-section" aria-labelledby="files-heading">
+        <div id="files-root"></div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Sophia. All rights reserved.</p>
+      <p>© <span id="year"></span> <span id="footer-name">Portfolio</span>. All rights reserved.</p>
     </footer>
 
+    <script src="content.js"></script>
     <script src="main.js" defer></script>
   </body>
 </html>

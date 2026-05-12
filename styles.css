@@ -134,14 +134,32 @@ a {
   padding: 0 var(--space-page) clamp(1.25rem, 3vw, 2rem);
 }
 
-.intro__text {
-  margin: 0;
-  max-width: 36rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
+.bio {
+  max-width: 42rem;
+  border: 1px solid var(--rule);
+  padding: clamp(1rem, 2.5vw, 1.35rem) clamp(1rem, 2.5vw, 1.35rem);
+  background: var(--bg);
+}
+
+.bio__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  line-height: 1.65;
   opacity: 0.88;
+}
+
+.bio__p {
+  margin: 0 0 0.85rem;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1.65;
+}
+
+.bio__p:last-child {
+  margin-bottom: 0;
 }
 
 .work {
@@ -185,21 +203,31 @@ a {
   grid-column: span 2;
 }
 
-.cell__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100%;
-  text-decoration: none;
-  color: inherit;
+.cell--span4 {
+  grid-column: span 4;
 }
 
-.cell__link:hover .cell__title {
+.cell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.cell:hover .cell__title {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.cell__link:focus-visible {
+.cell__media-link {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cell__media-link:focus-visible {
   outline: 2px solid var(--fg);
   outline-offset: -4px;
 }
@@ -226,7 +254,7 @@ a {
   margin: 0;
 }
 
-.cell__meta {
+.cell__body {
   padding: clamp(0.85rem, 2vw, 1.1rem) clamp(0.85rem, 2.2vw, 1.25rem) clamp(1.1rem, 2.5vw, 1.5rem);
 }
 
@@ -245,6 +273,52 @@ a {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   opacity: 0.82;
+}
+
+.cell__more {
+  margin-top: 0.65rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.55rem;
+}
+
+.cell__more-summary {
+  cursor: pointer;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.cell__more-summary::-webkit-details-marker {
+  display: none;
+}
+
+.cell__desc {
+  padding-top: 0.55rem;
+}
+
+.cell__desc p {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+.cell__desc p:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio__empty {
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.85;
 }
 
 .files {
@@ -391,6 +465,10 @@ a {
     grid-column: span 2;
   }
 
+  .cell--span4 {
+    grid-column: span 2;
+  }
+
   .grid-row--4 .cell:nth-child(2n) {
     border-right: 0;
   }
@@ -422,6 +500,10 @@ a {
   }
 
   .cell--span2 {
+    grid-column: span 1;
+  }
+
+  .cell--span4 {
     grid-column: span 1;
   }
 
